@@ -1,0 +1,9 @@
+<h1>Товары</h1>
+<a href="{% url 'items:create' %}">Добавить</a>
+<ul>
+{% for item in items %}
+  <li><a href="{{ item.get_absolute_url }}">{{ item.name }}</a> — {{ item.price }}</li>
+{% empty %}
+  <li>Список пуст</li>
+{% endfor %}
+</ul>

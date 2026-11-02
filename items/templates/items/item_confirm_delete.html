@@ -1,0 +1,4 @@
+<form method="post">{% csrf_token %}
+  <p>Удалить «{{ object.name }}»?</p>
+  <button type="submit">Да, удалить</button>
+</form>

@@ -1,0 +1,6 @@
+<h1>{{ item.name }}</h1>
+<p>{{ item.description }}</p>
+<p>Цена: {{ item.price }}</p>
+<a href="{% url 'items:update' item.pk %}">Изменить</a>
+<a href="{% url 'items:delete' item.pk %}">Удалить</a>
+<a href="{% url 'items:list' %}">Назад</a>
